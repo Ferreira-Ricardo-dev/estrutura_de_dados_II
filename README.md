@@ -19,6 +19,10 @@ Para rodar este projeto, você precisará de um compilador C++ (como o `clang` n
    python3 -m venv .venv
    source .venv/bin/activate
 
+2. Vá em setup e entre no terminal insira
+   ```bash
+   python setup.py build_ext --inplace
+
 
 # Análise de Algoritmos
 
