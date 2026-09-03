@@ -65,7 +65,13 @@ std::vector<float> quick_sort(std::vector<float> vetor) {
 
     return vetor;
 }
+std::vector<AlgoritimoMetricas> get_metricas() {
+    std::vector<AlgoritimoMetricas> metricas_vetor;
+    metricas_vetor.push_back(metricas.quick);
+    return metricas_vetor;
+}
 
 PYBIND11_MODULE(quick_sort, m) {
     m.def("quick_sort", &quick_sort);
+    m.def("get_metricas", &get_metricas);
 }

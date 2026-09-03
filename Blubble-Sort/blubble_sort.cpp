@@ -38,6 +38,12 @@ std::vector<float> bubble_sort (std::vector<float> vetor) {
     return vetor;
 }
 
+std::vector<AlgoritimoMetricas> get_metricas() {
+    std::vector<AlgoritimoMetricas> metricas_vetor;
+    metricas_vetor.push_back(metricas.bubble);
+    return metricas_vetor;
+}
 PYBIND11_MODULE(blubble_sort, m) {
-    m.def("bubble_sort", &bubble_sort, "Ordena um vetor usando o algoritmo Bubble Sort");
+    m.def("bubble_sort", &bubble_sort);
+    m.def("get_metricas", &get_metricas);
 }
