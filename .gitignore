@@ -2,3 +2,8 @@
 .vscode/
 output/
 *.so
+*.pyd
+*.so
+build/
+__pycache
+venv/
