@@ -73,5 +73,10 @@ std::vector<AlgoritimoMetricas> get_metricas() {
 
 PYBIND11_MODULE(quick_sort, m) {
     m.def("quick_sort", &quick_sort);
+    pybind11::class_<AlgoritimoMetricas>(m, "AlgoritimoMetricas")
+        .def_readonly("comparacoes", &AlgoritimoMetricas::comparacoes)
+        .def_readonly("trocas", &AlgoritimoMetricas::trocas)
+        .def_readonly("movimentacoes", & AlgoritimoMetricas::movimentacoes)
+        .def_readonly("tempo", &AlgoritimoMetricas::tempo);
     m.def("get_metricas", &get_metricas);
 }

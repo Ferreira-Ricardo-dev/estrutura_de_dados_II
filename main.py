@@ -20,9 +20,8 @@ while True:
                     opcao_1 = int(input("""
 1 - Experimentar ordenação por Bubble Sort
 2 - Experimentar ordenação por Quick Sort
-3 - Mostrar métricas de desempenho dos algoritmos
-4 - Definir um novo tamanho de array
-5 - Voltar\n"""))
+3 - Definir um novo tamanho de array
+4 - Voltar\n"""))
 
                     if opcao_1 == 1:
                         array_bubble = blubble_sort.bubble_sort(array_base)
@@ -33,21 +32,14 @@ while True:
                         array_quick = quick_sort.quick_sort(array_base)
                         print(f"Quick: {array_quick}")
                         continue
-
-                    elif opcao_1 == 3:
-                        metricas_bubble = blubble_sort.get_metricas()
-                        metricas_quick = quick_sort.get_metricas()
-                        print(f"\nMétricas de desempenho do Bubble Sort: {metricas_bubble[0]}")
-                        print(f"Métricas de desempenho do Quick Sort: {metricas_quick[0]}\n")
-                        continue
                     
-                    elif opcao_1 == 4: 
+                    elif opcao_1 == 3: 
                         size = int(input("Digite o tamanho do novo array: "))
                         array_base = create_array(size)
                         print(f"\nNovo Array de tamanho {size}: {array_base}\n")
                         continue
 
-                    elif opcao_1 == 5:
+                    elif opcao_1 == 4:
                         break
 
                     else:
