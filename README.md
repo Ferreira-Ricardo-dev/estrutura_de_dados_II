@@ -18,3 +18,26 @@ Para rodar este projeto, você precisará de um compilador C++ (como o `clang` n
    ```bash
    python3 -m venv .venv
    source .venv/bin/activate
+
+
+# Análise de Algoritmos
+
+## O tamanho dos dados influencia as operações?
+
+Sim. Quanto maior a quantidade de elementos, maior pode ser o número de operações.
+
+## Bubble Sort x Quick Sort
+
+- **Bubble Sort:** O(n²), fica mais lento com muitos elementos.
+- **Quick Sort:** O(n log n) em média, sendo geralmente mais rápido.
+
+## Por que analisar apenas o resultado?
+
+Porque dois algoritmos podem chegar ao mesmo resultado, mas gastar tempos e quantidades de operações diferentes.
+
+Por isso, é importante analisar:
+
+- Tempo de execução
+- Número de operações
+- Complexidade
+- Uso de memória
