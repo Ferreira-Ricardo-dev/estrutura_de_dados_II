@@ -1,4 +1,4 @@
-from estrutura_de_dados_II.Robô.robo import create_array_temperatura
+from Robô.robo import create_array_temperatura
 
 #Recebendo as 10 temperaturas
 temperaturas = create_array_temperatura()

@@ -1,4 +1,4 @@
-from estrutura_de_dados_II.Robô.robo import *
+from Robô.robo import *
 import blubble_sort
 import quick_sort
 
